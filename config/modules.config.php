@@ -6,7 +6,7 @@
  *  - Symbol "!" (exclamation mark) - A module is not for the production mode (APP_ENV_PROD).
  */
 
-return [
+$modules = [
     'Zend\Router',
     'Zend\I18n',
     'Zend\Mvc\I18n',
@@ -31,4 +31,5 @@ return [
     '!ZfSnapPhpDebugBar',
     '!ExDebugBar',
 ];
+return $modules;
 
