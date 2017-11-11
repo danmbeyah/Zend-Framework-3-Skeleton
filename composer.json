@@ -72,7 +72,8 @@
             "User\\": "module/User/src",
             "User\\Test\\": "module/User/test",
             "Mail\\": "module/Mail/src",
-            "Cli\\": "module/Cli/src"
+            "Cli\\": "module/Cli/src",
+            "User\\": "module/User/src"
         }
     },
     "scripts": {
