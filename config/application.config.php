@@ -4,7 +4,7 @@
  * Main application configuration file.
  */
 
-$modules = [
+return [
     'modules' => require __DIR__ . '/modules.config.php',
     'module_listener_options' => [
         'config_glob_paths' => [
@@ -18,4 +18,4 @@ $modules = [
         'check_dependencies' => APP_ENV_DEV || APP_ENV_TEST,
     ],
 ];
-return $modules;
+
