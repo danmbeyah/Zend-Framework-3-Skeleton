@@ -32,7 +32,7 @@ $modules = [
     '!ExDebugBar',
 ];
 $result = [];
-for ($i = 0; $i != count($modules); $i++) {
+for ($i = 0; $i < count($modules); $i++) {
     if (strpos($modules[$i], '!') === 0) {
         if (!APP_ENV_PROD) {
             $result[] = ltrim($modules[$i], '!');
