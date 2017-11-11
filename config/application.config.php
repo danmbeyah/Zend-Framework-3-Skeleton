@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This is the main application configuration file.
+ * Main application configuration file.
  */
 
 $modules = [
