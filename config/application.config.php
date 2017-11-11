@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Main application configuration file.
+ * This is the main application configuration file.
  */
 
 return [

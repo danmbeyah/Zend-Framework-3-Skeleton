@@ -6,7 +6,7 @@
  *  - Symbol "!" (exclamation mark) - A module is not for the production mode (APP_ENV_PROD).
  */
 
-$modules = [
+return [
     'Zend\Router',
     'Zend\I18n',
     'Zend\Mvc\I18n',
@@ -31,14 +31,4 @@ $modules = [
     '!ZfSnapPhpDebugBar',
     '!ExDebugBar',
 ];
-$result = [];
-for ($i = 0; $i < count($modules); $i++) {
-    if (strpos($modules[$i], '!') === 0) {
-        if (!APP_ENV_PROD) {
-            $result[] = ltrim($modules[$i], '!');
-        }
-    } else {
-        $result[] = $modules[$i];
-    }
-}
-return $result;
+
